@@ -1,0 +1,258 @@
+@use './reset' as *;
+@use './colors' as *;
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 22.25rem;
+		background: $gradient1;
+		border-radius: 0rem 0rem 2rem 2rem;
+		box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+
+		h1 {
+			color: $lightblue;
+			font-size: 1.125rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			margin: 1.5rem auto;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+
+		.circle {
+			display: flex;
+			flex-direction: column;
+			background: $gradient2;
+			width: 8.75rem;
+			height: 8.75rem;
+			border-radius: 50%;
+
+			.circle-p {
+				display: block;
+				color: #fff;
+				font-size: 3.5rem;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 4.5rem;
+				position: relative;
+				margin-top: 1.56rem;
+
+				.circle-span {
+					display: block;
+					color: $lightblue;
+					font-size: 1rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					opacity: 0.5168;
+					margin-bottom: 1.37rem;
+				}
+			}
+		}
+
+		p:nth-child(3) {
+			color: #fff;
+			font-size: 1.5rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			margin-top: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		p:nth-child(4) {
+			width: 16.25rem;
+			color: $lightblue;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+	}
+
+	.right {
+		h2 {
+			color: $darknavy;
+			text-align: left;
+			font-size: 1.125rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			margin: 1.5rem 0 1.5rem 2rem;
+		}
+
+		.reaction {
+			color: $red;
+			background: $red-100;
+		}
+
+		.memory {
+			color: $yellow;
+			background: $yellow-100;
+		}
+
+		.verbal {
+			color: $green;
+			background: $green-100;
+		}
+
+		.visual {
+			color: $blue;
+			background: $blue-100;
+		}
+
+		.stats {
+			margin: 0 1.87rem;
+
+			img {
+				width: 1.25rem;
+				height: 1.25rem;
+				margin-left: 1rem;
+				margin-right: 0.5rem;
+			}
+		}
+
+		.list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 19.6875rem;
+			height: 3.5rem;
+			border-radius: 0.75rem;
+			margin-bottom: 1rem;
+
+			.stats-left {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.stats-right {
+				margin-right: 1rem;
+			}
+		}
+
+		button {
+			border: none;
+			color: #fff;
+			font-size: 1.125rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			width: 19.6875rem;
+			height: 3.5rem;
+			margin-top: 1.5rem;
+			border-radius: 8rem;
+			background: $darknavy;
+			cursor: pointer;
+
+			&:hover {
+				background: $gradient1;
+			}
+		}
+	}
+}
+
+.actual-stat {
+	color: $darknavy;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.hundred {
+	color: $darknavy;
+	opacity: 0.5;
+}
+
+@media (min-width: 796px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-radius: 2rem;
+		box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+
+		.left {
+			width: 23rem;
+			height: 32rem;
+			border-radius: 2rem;
+
+			h1 {
+				font-size: 1.5rem;
+				margin: 2.38rem 7.75rem 2.19rem 7.44rem;
+			}
+
+			p {
+				font-size: 1.25rem;
+			}
+
+			.circle {
+				width: 12.5rem;
+				height: 12.5rem;
+
+				.circle-p {
+					font-size: 4.5rem;
+					margin-top: 3.44rem;
+
+					.circle-span {
+						font-size: 1.25rem;
+						margin-bottom: 2.88rem;
+					}
+				}
+			}
+
+			p:nth-child(3) {
+				font-size: 2rem;
+				margin-top: 1.75rem;
+				margin-bottom: 0.88rem;
+			}
+
+			p:nth-child(4) {
+				font-size: 1.125rem;
+			}
+		}
+
+		.right {
+			h2 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 1.125rem;
+			}
+
+			span {
+				font-size: 1.125rem;
+			}
+
+			button {
+				font-size: 1.125rem;
+				margin-top: 2.56rem;
+				width: 18rem;
+			}
+		}
+	}
+}

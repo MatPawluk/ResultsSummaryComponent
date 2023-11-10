@@ -1,0 +1,37 @@
+$gradient1: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+$gradient2: linear-gradient(
+	180deg,
+	#4d21c9 0%,
+	rgba(37, 33, 201, 0) 100%,
+	rgba(37, 33, 201, 0) 100%
+);
+$darknavy: #303b59;
+$red: #f55;
+$red-100: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.95) 0%,
+		rgba(255, 255, 255, 0.95) 100%
+	)
+	#f55;
+$yellow: #ffb21e;
+$yellow-100: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.95) 0%,
+		rgba(255, 255, 255, 0.95) 100%
+	),
+	#ffb21e;
+$green: #00bb8f;
+$green-100: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.95) 0%,
+		rgba(255, 255, 255, 0.95) 100%
+	),
+	#00bb8f;
+$blue: #1125d6;
+$blue-100: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.95) 0%,
+		rgba(255, 255, 255, 0.95) 100%
+	),
+	#1125d6;
+$lightblue: #cac9ff;

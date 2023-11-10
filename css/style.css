@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 22.25rem;
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+  border-radius: 0rem 0rem 2rem 2rem;
+  box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+}
+.container .left h1 {
+  color: #cac9ff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1.5rem auto;
+}
+.container .left p {
+  font-size: 1rem;
+}
+.container .left .circle {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+  width: 8.75rem;
+  height: 8.75rem;
+  border-radius: 50%;
+}
+.container .left .circle .circle-p {
+  display: block;
+  color: #fff;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4.5rem;
+  position: relative;
+  margin-top: 1.56rem;
+}
+.container .left .circle .circle-p .circle-span {
+  display: block;
+  color: #cac9ff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.5168;
+  margin-bottom: 1.37rem;
+}
+.container .left p:nth-child(3) {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.container .left p:nth-child(4) {
+  width: 16.25rem;
+  color: #cac9ff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .right h2 {
+  color: #303b59;
+  text-align: left;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1.5rem 0 1.5rem 2rem;
+}
+.container .right .reaction {
+  color: #f55;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) #f55;
+}
+.container .right .memory {
+  color: #ffb21e;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #ffb21e;
+}
+.container .right .verbal {
+  color: #00bb8f;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00bb8f;
+}
+.container .right .visual {
+  color: #1125d6;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125d6;
+}
+.container .right .stats {
+  margin: 0 1.87rem;
+}
+.container .right .stats img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+.container .right .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 19.6875rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+.container .right .list .stats-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .right .list .stats-right {
+  margin-right: 1rem;
+}
+.container .right button {
+  border: none;
+  color: #fff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 19.6875rem;
+  height: 3.5rem;
+  margin-top: 1.5rem;
+  border-radius: 8rem;
+  background: #303b59;
+  cursor: pointer;
+}
+.container .right button:hover {
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+}
+
+.actual-stat {
+  color: #303b59;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hundred {
+  color: #303b59;
+  opacity: 0.5;
+}
+
+@media (min-width: 796px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+  }
+  .container .left {
+    width: 23rem;
+    height: 32rem;
+    border-radius: 2rem;
+  }
+  .container .left h1 {
+    font-size: 1.5rem;
+    margin: 2.38rem 7.75rem 2.19rem 7.44rem;
+  }
+  .container .left p {
+    font-size: 1.25rem;
+  }
+  .container .left .circle {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+  .container .left .circle .circle-p {
+    font-size: 4.5rem;
+    margin-top: 3.44rem;
+  }
+  .container .left .circle .circle-p .circle-span {
+    font-size: 1.25rem;
+    margin-bottom: 2.88rem;
+  }
+  .container .left p:nth-child(3) {
+    font-size: 2rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.88rem;
+  }
+  .container .left p:nth-child(4) {
+    font-size: 1.125rem;
+  }
+  .container .right h2 {
+    font-size: 1.5rem;
+  }
+  .container .right p {
+    font-size: 1.125rem;
+  }
+  .container .right span {
+    font-size: 1.125rem;
+  }
+  .container .right button {
+    font-size: 1.125rem;
+    margin-top: 2.56rem;
+    width: 18rem;
+  }
+}/*# sourceMappingURL=style.css.map */
