@@ -34,6 +34,9 @@ The challenge focused on creating a results summary component, providing a stati
 3. **Open in Browser:**
    - Launch the `index.html` file in your preferred browser.
 
+4. **Or open in your browser**
+   - [ResultsSummaryComponent](https://matpawluk.github.io/ResultsSummaryComponent/)
+
 ## Interactive Elements
 
 - Hover and focus states have been implemented for all interactive elements, adhering to the project's specified requirements.
